@@ -8,6 +8,11 @@ function handleSearch() {
   const annaUrl = `https://annas-archive.org/search?q=${encodeURIComponent(
     query
   )}`;
+  const oceanUrl = `https://oceanofpdf.com/?s=${encodeURIComponent(
+    query
+  )}`;
+
+  window.open(oceanUrl, "_blank"),
   window.open(annaUrl, "_blank");
 }
 document.getElementById("searchButton").addEventListener("click", handleSearch);
