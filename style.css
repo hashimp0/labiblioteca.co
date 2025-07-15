@@ -8,7 +8,7 @@ body,html{
   font-size: 90px;
   margin-left: 30%;
   margin-top: 8%;
-  font-family: poppins;
+  font-family: "poppins";
   text-shadow: 2px 1px 5px rgb(234, 255, 229);
 }
 .search-box input{
