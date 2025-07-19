@@ -8,7 +8,7 @@ body,html{
   font-size: 90px;
   margin-left: 30%;
   margin-top: 8%;
-  font-family: "poppins";
+  font-family: poppins;
   text-shadow: 2px 1px 5px rgb(234, 255, 229);
 }
 .search-box input{
@@ -143,7 +143,6 @@ body,html{
   font-size: 20px;
 }
 .book-1{
-  margin-left: 45px;
   margin-top: 60px;
   width: 430px;
   top: 120px;
@@ -151,28 +150,46 @@ body,html{
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
   -o-border-radius: 10px;
   text-align: center;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  margin-left: 45px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-border-radius: 10px;
 }
 .book-1 img{
   margin-left: -240px;
   margin-top: -25px;
 }
+.popular img , .popular-2 img , .popular-3 img :hover{
+  object-fit: cover;
+  width: auto;
+  height: auto;
+
+}
 .popular img , .popular-2 img , .popular-3 img{
-  width: 150px;
+  width: 200px;
+  height: 300px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  object-fit: cover;
 }
 .book-1-name{
   margin-left: 210px;
-  margin-top: -170px;
+  margin-top: -240px;
   font-family: "Zain", serif;
   font-weight: 400;
   font-size: 30px;
+}
+.book-1-name b{
+  display: none;
 }
 .book-1-author{
   margin-left: 210px;
@@ -268,6 +285,15 @@ body,html{
     margin-top: 12%;
     text-align: center;
   }
+  .photo{
+    width: 300px;
+  }
+  .para{
+    font-size: 16px;
+    width: 52%;
+    margin-top: -16%;
+    margin-left: 55%;
+  }
   .sub-heading{
     margin-left: 70%;
     font-size: 20px;
@@ -275,7 +301,7 @@ body,html{
     margin-top: -9%;
   }
   .scrolling{
-    width: 100%;
+    width: 80%;
   }
   .scroll-frame{
     width: 100%;
@@ -286,14 +312,17 @@ body,html{
   }
   .book1{
     display: block;
-    width: 100%;
+    width: 80%;
   }
   .book-1{
     width: 120%;
     margin-top: 10%;
   }
   .book-1 img{
-    margin-left: -78%;
+    margin-left: -72%;
+  }
+  .book-1-name b{
+    display: inline;
   }
   .popular-2{
     margin-top: 80%;
@@ -319,13 +348,13 @@ body,html{
     padding: 0%;
   }
   .company-name {
-    margin-left: -10%;
+    margin-left: 5%;
     font-size: 40px;
     margin-top: 12%;
   }
   .sub-heading{
     font-size: 15px;
-    margin-left: 40%;
+    margin-left: 48%;
     margin-top: -10%;
   }
   .search-box input{
@@ -338,6 +367,18 @@ body,html{
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     font-size: 10px;
+  }
+  .photo{
+    width: 200px;
+    margin-left: 25%;
+    margin-top: 10px;
+  }
+  .para{
+    width: 80%;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 12px;
+    margin-left: 10%;
   }
   .scroll-frame{
     margin-left: -5%;
@@ -363,7 +404,7 @@ body,html{
   .nav{
     display: flex;
     position: fixed;
-    margin-top: 145%;
+    margin-top: 130%;
     margin-left: 17%;
     z-index: 1000;
   }
@@ -375,11 +416,11 @@ body,html{
     margin-top: 0px;
   }
   .popular{
-    margin-top: 10%;
+    margin-top: 8%;
   }
   .popular-2{
     margin-left: 12%;
-    margin-top: 100%;
+    margin-top: 80%;
   }
   .popular-2 img{
     border-radius: 10px;
@@ -398,32 +439,36 @@ body,html{
   }
   .book-1{
     width: 280px;
-    margin-left: 5%;
+    margin-left: 10%;
     height: 180px;
   }
   .book-1 img{
-    width: 100px;
-    margin-top: 13px;
-    margin-left: -80%;
+    width: 150px;
+    height: 250px;
+    margin-top: 0px;
+    margin-left: -63%;
+    object-fit: cover;
+    overflow: hidden;
   }
   .book-1 h1{
     margin-left: 25%;
   }
   .book-1-name{
     font-size: 20px;
-    margin-top: -50%;
+    margin-top: -77%;
   }
   .book-1-author{
-    font-size: 15px;
+    font-size: 10px;
+    padding-left: 14%;
   }
   .book-1-readnow{
-    margin-left: 25%;
+    margin-left: 45%;
     width: 80px;
-    font-size: xx-small;
+    font-size: 10px;
     height: 30px;
   }
   .book-1-readnowblack{
-    margin-left: 25%;
+    margin-left: 45%;
     width: 80px;
     font-size: xx-small;
     height: 30px;
@@ -431,6 +476,12 @@ body,html{
   .popular-3{
     margin-top: 100%;
     padding-bottom: 150%;
+  }
+  .rate{
+    margin-top: -60%;
+  }
+  .rating{
+    margin-bottom: 0%;
   }
 }
 .rate{
