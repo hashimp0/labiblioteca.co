@@ -2,13 +2,19 @@ function handleSearch() {
   const query = document.getElementById("searchBar").value.trim();
 
   if (query === "") {
-    alert("Please enter a book name.");
+    alert("Please search any book or author or publishers !");
     return;
   }
   const zlibUrl = `https://z-library.sk/s/${encodeURIComponent(query)}`;
   window.open(zlibUrl, "_blank");
 }
 
+document.getElementById("searchButton").addEventListener("click", handleSearch);
+document.getElementById("searchBar").addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    handleSearch();
+  }
+});
 document.getElementById("searchButton").addEventListener("click", handleSearch);
 document.getElementById("searchBar").addEventListener("keypress", (event) => {
   if (event.key === "Enter") {
